@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #123c69;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Registration Container */
+
+.container {
+    width: 450px;
+    max-width: 150%;
+    margin: 70px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #123c69;
+    margin-bottom: 30px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Input Focus */
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Register Button */
+input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button Hover */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 35px auto;
+        padding: 25px;
+    }
+}
